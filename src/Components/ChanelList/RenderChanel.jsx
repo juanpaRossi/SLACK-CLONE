@@ -1,21 +1,24 @@
 import React from 'react'
 
-const RenderChanel = (props) => {
-    const mapCanales = props.chanel.map((canal) => {
+const RenderChanel = ({canal}) => {
 
-        return (
-            <div key={canal.id}><hr />
-                <a>
-                    {
-                        canal.nombre
-                    }
-                </a><hr />
-            </div>
-        )
-    })
+
     return (
         <div>
-            {mapCanales}
+            {
+                    canal.map((canal) => {
+                        return (
+                            
+                            <div key={canal.id}><hr />
+                                <a>
+                                    {
+                                        canal.nombre
+                                    }
+                                </a><hr />
+                            </div>
+                        )
+                    })
+            }
         </div>
     )
 }

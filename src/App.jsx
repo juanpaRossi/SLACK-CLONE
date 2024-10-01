@@ -19,8 +19,8 @@ function App() {
     <>
 <h1>Hola mundo </h1>
 <RenderChat mensajes={mensajes} />
-<RenderChanel chanel={canales} />
 
+<RenderChanel canal={canales} />
 
     </>
   )

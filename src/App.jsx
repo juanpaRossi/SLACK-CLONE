@@ -3,6 +3,7 @@ import RenderChat from "./Components/ChatList/RenderChat"
 import { mensajes } from "./Components/ChatList/data"
 import RenderChanel from "./Components/ChanelList/RenderChanel"
 import { canales } from "./Components/ChanelList/dataChanel"
+import CrearWorkspace from "./Components/WorkSpace/CrearWorkspace"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
 <RenderChat mensajes={mensajes} />
 
 <RenderChanel canal={canales} />
+<CrearWorkspace/>
 
     </>
   )
